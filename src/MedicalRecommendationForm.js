@@ -276,11 +276,12 @@ const MedicalRecommendationForm = () => {
                 <tr>
                   <th>Branch Name</th>
                   <th>Medicine Name</th>
-                  <th>Medicine Qty</th>
+                  <th>Medicine Quantity</th>
+                  <th>Medicine Unit Cost</th>
                   <th>Rating</th>
                   <th>Area Name</th>
                   <th>Address</th>
-                  <th>City</th>
+                  {/* <th>City</th> */}
                 </tr>
               </thead>
               <tbody>
@@ -289,10 +290,11 @@ const MedicalRecommendationForm = () => {
                     <td>{store.pharmacyId.branchName}</td>
                     <td>{medicineSelectedName}</td>
                     <td>{store.medicineQuantity}</td>
+                    <td>{`${store.price} Rs`}</td>
                     <td>{store.pharmacyId.rating}</td>
                     <td>{store.pharmacyId.areaName}</td>
                     <td>{store.pharmacyId.address}</td>
-                    <td>{store.pharmacyId.city}</td>
+                    {/* <td>{store.pharmacyId.city}</td> */}
                   </tr>
                 ))}
               </tbody>
