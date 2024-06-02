@@ -1,0 +1,51 @@
+.form-container {
+  background-color: #f0f0f0; /* Greyish background color */
+  padding: 20px; /* Padding around the form */
+  border-radius: 8px; /* Optional: for rounded corners */
+  max-width: 300px; /* Width of the form container */
+  margin: 20px; /* Margin around the container */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the text bold */
+  width: 100%;
+}
+
+label > div {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; /* Margin between the fields */
+}
+
+input {
+  margin: 0 5px;
+  width: 60px;
+  padding: 5px; /* Padding within the input fields */
+}
+
+button {
+  padding: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px; /* Margin to separate the Predict button from the other fields */
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: darkgreen; /* Change the color on hover for better UX */
+}
